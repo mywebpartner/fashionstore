@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Harshith\\Desktop\\FashionWebsite\\FashionAPI\\FashionAPI\\FashionAPI.csproj": {}
+    "C:\\Users\\Samarth Singh\\Desktop\\Fashion_Store_Project\\FashionAPI\\FashionAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Harshith\\Desktop\\FashionWebsite\\FashionAPI\\FashionAPI\\FashionAPI.csproj": {
+    "C:\\Users\\Samarth Singh\\Desktop\\Fashion_Store_Project\\FashionAPI\\FashionAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Harshith\\Desktop\\FashionWebsite\\FashionAPI\\FashionAPI\\FashionAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Samarth Singh\\Desktop\\Fashion_Store_Project\\FashionAPI\\FashionAPI.csproj",
         "projectName": "FashionAPI",
-        "projectPath": "C:\\Users\\Harshith\\Desktop\\FashionWebsite\\FashionAPI\\FashionAPI\\FashionAPI.csproj",
-        "packagesPath": "C:\\Users\\Harshith\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Harshith\\Desktop\\FashionWebsite\\FashionAPI\\FashionAPI\\obj\\",
+        "projectPath": "C:\\Users\\Samarth Singh\\Desktop\\Fashion_Store_Project\\FashionAPI\\FashionAPI.csproj",
+        "packagesPath": "C:\\Users\\Samarth Singh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samarth Singh\\Desktop\\Fashion_Store_Project\\FashionAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Harshith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Samarth Singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
