@@ -1,0 +1,13 @@
+<div class="register-hero">
+  <h1>REGISTER</h1>
+  <form class="form" #registerForm="ngForm" (ngSubmit)="getUserData(registerForm.value)">
+    <input name="username" type="text" placeholder="Username" required ngModel />
+    <input name="password" type="password" placeholder="Password" required minlength="8" ngModel />
+    <input name="email" type="email" placeholder="Email" required ngModel />
+    <input name="firstName" type="text" placeholder="First Name" ngModel />
+    <input name="lastName" type="text" placeholder="Last Name" ngModel />
+    <input name="address" type="text" placeholder="Address" ngModel />
+    <input name="phone" type="tel" placeholder="Phone no." ngModel />
+    <button type="submit">Register</button>
+  </form>
+</div>
