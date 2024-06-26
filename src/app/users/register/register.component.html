@@ -1,13 +1,17 @@
 <div class="register-hero">
   <h1>REGISTER</h1>
-  <form class="form" #registerForm="ngForm" (ngSubmit)="getUserData(registerForm.value)">
-    <input name="username" type="text" placeholder="Username" required ngModel />
-    <input name="password" type="password" placeholder="Password" required minlength="8" ngModel />
-    <input name="email" type="email" placeholder="Email" required ngModel />
-    <input name="firstName" type="text" placeholder="First Name" ngModel />
-    <input name="lastName" type="text" placeholder="Last Name" ngModel />
-    <input name="address" type="text" placeholder="Address" ngModel />
-    <input name="phone" type="tel" placeholder="Phone no." ngModel />
-    <button type="submit">Register</button>
+  <form class="form" [formGroup]="registerForm" (ngSubmit)="getUserData()">
+    <input name="username" type="text" placeholder="Username" ngModel formControlName="username" />
+    <span class="errormsg" *ngIf="username && username.invalid &&username.touched">Username is required</span>
+    <input name="password" type="password" placeholder="Password" ngModel formControlName="password" />
+    <span class="errormsg" *ngIf="password && password.invalid &&password.touched">Password must be atleast 8 characters
+      long</span>
+    <input name="email" type="email" placeholder="Email" ngModel formControlName="email" />
+    <span class="errormsg" *ngIf="email && email.invalid && email.touched">Valid email address is required</span>
+    <input name="firstName" type="text" placeholder="First Name" ngModel formControlName="firstName" />
+    <input name="lastName" type="text" placeholder="Last Name" ngModel formControlName="lastName" />
+    <input name="address" type="text" placeholder="Address" ngModel formControlName="address" />
+    <input name="phone" type="tel" placeholder="Phone no." ngModel formControlName="phone" />
+    <button type="submit" [disabled]="registerForm.invalid">Register</button>
   </form>
 </div>
