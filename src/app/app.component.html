@@ -1,0 +1,19 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<h1>{{title}}</h1>
+<form #catForm = "ngForm" (ngSubmit)="getCatData(catForm.value)">
+  <input type="number" required name="ID" #ID = "ngModel" placeholder="Enter Category ID" ngModel>
+  <br><span *ngIf = "ID.invalid && ID.touched" style = "color:red"> Please enter a valid input</span>
+  <br>
+  <input type="text" required name="Name" maxlength="100" #Name = "ngModel"  placeholder="Enter Category Name" ngModel>
+<br><span  *ngIf = "Name.invalid && Name.touched" style = "color:red"> Please enter a valid input</span>
+<br>
+<button>Add Category</button>
+</form> <app-prodform></app-prodform>

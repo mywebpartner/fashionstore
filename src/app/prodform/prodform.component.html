@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+<form #prodForm = "ngForm" (ngSubmit)="getProdData(prodForm.value)">
+  <input required name="prID" #prID = "ngModel" placeholder="Enter Product ID" ngModel>
+  <br><span *ngIf = "prID.invalid && prID.touched" style = "color:red"> Please enter a valid input</span>
+  <br>
+  <input type="text" required name="prName" maxlength="100" #prName = "ngModel"  placeholder="Enter Product Name" ngModel>
+<br><span  *ngIf = "prName.invalid && prName.touched" style = "color:red"> Please enter a valid input</span>
+<br>
+  <input type="text" required name="desc" #desc = "ngModel" placeholder="Enter Description" ngModel>
+  <br><span *ngIf = "desc.invalid && desc.touched" style = "color:red"> Please enter a valid input</span>
+  <br>
+  <input type="file" name="mainIm" #mainIm = "ngModel" placeholder="Submit Main Image" ngModel>
+  <br>
+  <br>
+  <input type="file" name="Images" #Images = "ngModel" placeholder="Attach other images" ngModel>
+  <br>
+  <br>
+  <input required pattern="^[0-9]+\.[0-9][0-9]$" name="price" #price = "ngModel" placeholder="Enter price" ngModel>
+  <br><span *ngIf = "price.invalid && price.touched" style = "color:red"> Please enter a valid input</span>
+  <br>
+  <input type="number" pattern="^[0-9][0-9]$"required name="stock" #stock = "ngModel" placeholder="Enter stock" ngModel>
+  <br><span *ngIf = "stock.invalid && stock.touched" style = "color:red"> Please enter a valid input</span>
+  <br>
+  <input required name="catId" #catId = "ngModel" placeholder="Enter category ID" ngModel>
+  <br><span *ngIf = "catId.invalid && catId.touched" style = "color:red"> Please enter a valid input</span>
+  <br>
+
+<button>Add Product</button>
+</form>
+
